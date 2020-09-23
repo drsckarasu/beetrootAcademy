@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper {
+.wrapper{
     padding: 70px 100px;
     color: #fff;
+}
+.contentWrapper{
+    width: 90%;
+    font-size: 0;
+    margin: 0 auto;
 }
 .circle{
     background-color: #2a69a6;
@@ -13,19 +18,19 @@
     height: 70px;
     border-radius: 50%;
     text-align: center;
-    line-height: 90px;
+    line-height: 100px;
     margin: 0 auto;
 }
 .full{
-    line-height: 85px;
+    line-height: 95px;
 }
 .half{
-    line-height: 80px;
+    line-height: 90px;
 }
 .column{
     display: inline-block;
-    width: 30%;
-    margin: 0 10px;
+    width: 33.33%;
+    padding: 0 20px;
 }
 .header{
     font-family: "Proxima Nova Rg";
@@ -46,6 +51,13 @@
 .circle:hover{
     background-color: #fff;
     border: 1px solid #2a69a6;
-
 }
-
+.iconBlue{
+    display: none;
+}
+.circle:hover .icon{
+    display: none;
+}
+.circle:hover .iconBlue{
+    display: inline;
+}
