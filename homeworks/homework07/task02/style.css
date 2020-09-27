@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    transition: all .1s ease-in;*/
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+.wrapper{
+    height: 120vh;
+    background-color: #3399cc;
+    color: #fff;
+    border: 20px solid #2b81ac;
+}
+.forecast{
+    width: 70%;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+}
+header{
+    margin: 30px 0;
+    font-size: 28px;
+}
+.table{
+    border: 2px solid #fff;
+}
+.row{
+    font-size: 0;
+}
+.cell{
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 24px 0;
+}
+.half{
+    width: 50%;
+}
+.quarter{
+    width: 25%;
+}
+.first div:nth-of-type(2){
+    background-color: #33cccc;
+}
+.first div:nth-of-type(3){
+    background-color: #996699;
+}
+.second div:first-of-type{
+    background-color: #c24747;
+}
+.second div:nth-of-type(2){
+    background-color: #e2674a;
+}
+.second div:nth-of-type(3){
+    background-color: #ffcc66;
+}
+.second div:nth-of-type(4){
+    background-color: #99cc99;
+}
+.third div:first-of-type{
+    background-color: #669999;
+}
+.third div:nth-of-type(2){
+    background-color: #cc6699;
+}
+.third div:nth-of-type(3){
+    background-color: #339966;
+}
+.fourth div:first-of-type{
+    background-color: #666699;
+}
+.icon{
+    color: #e2e2e2;
+    margin-top: 15px;
+}
+footer{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.table:hover{
+    opacity: 0.5;
+}
+.table:hover .cell{
+    opacity: 1;
+}
