@@ -23,6 +23,7 @@ header{
 }
 .table{
     border: 2px solid #fff;
+    font-size: 0;
 }
 .row{
     font-size: 0;
