@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    transition: all .1s ease-in;*/
+    transition: all .1s ease-in;
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 .wrapper{
@@ -80,9 +80,6 @@ footer{
     font-size: 20px;
     margin-top: 30px;
 }
-.table:hover{
+.table:hover .cell:not(:hover){
     opacity: 0.5;
-}
-.table:hover .cell{
-    opacity: 1;
 }
