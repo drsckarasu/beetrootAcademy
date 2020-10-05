@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    height: 100%;
+    background-color: #b07cf7;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+}
+.contentWrapper{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 90px;
+    color: #fff;
+    margin: 100px 0 30px;
+}
+.headerText{
+    font-family: "Raleway Light";
+    font-size: 17px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.row{
+    font-size: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    position: relative;
+    color: #fff;
+    background-image: url("img/img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 310px;
+    padding: 0 15px;
+}
+}
+.column:first-of-type{
+    background-image: url("img/img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.column:nth-of-type(2){
+    background-image: url("img/img2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.column:last-of-type{
+    background-image: url("img/img3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.date{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #90908e;
+    border-radius: 3px;
+    left: 30px;
+    top: 30px;
+    text-align: center;
+    line-height: 1;
+}
+.day{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 32px;
+}
+.month{
+    font-family: "Raleway ExtraBold";
+    font-size: 21px;
+    line-height: 25px;
+}
+.columnText{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+.quote{
+    font-family: "Raleway Light";
+    font-size: 13px;
+    line-height: 25px;
+    color: #eaeaea;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+footer{
+    text-align: center;
+    margin: 0 auto;
+
+}
+button{
+    margin-top: 50px;
+    width: 200px;
+    height: 55px;
+    background-color: #f72b3b;
+    color: #fff;
+}
