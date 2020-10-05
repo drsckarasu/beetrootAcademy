@@ -62,11 +62,18 @@ li:nth-of-type(7){
     padding: 0 6px;
     margin-right: 30px;
 }
-li:hover:not(:nth-of-type(8)){
-    border-top: 1px solid #bed62f;
-}
 li:hover{
     cursor: pointer;
+}
+li:hover::before{
+    content: "";
+    display: block;
+    border-top: 1px solid #bed62f;
+}
+li:nth-of-type(7):hover::before, li:last-of-type:hover::before{
+    content: "";
+    display: block;
+    border-top: none;
 }
 .content{
     width: 50%;
