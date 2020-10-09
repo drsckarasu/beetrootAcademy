@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@font-face {
+    font-family: 'Miso';
+    src: url("fonts/miso.otf");
+}
+@font-face {
+    font-family: 'Miso Bold';
+    src: url("fonts/miso-bold.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: #000;
+}
+.wrapper{
+    background-color: #fdde7e;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    background-color: #fff;
+    width: 30%;
+    height: 73.33%;
+    margin: 0 15px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 5px 2px #cab265;
+    display: flex;
+    justify-content: center;
+}
+.column:nth-of-type(2){
+    height: 83.33%;
+}
+.column__center{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cost{
+    font-family: 'Miso Bold', sans-serif;
+    font-size: 70px;
+    color: #02995b;
+}
+.title{
+    font-family: 'Miso', sans-serif;
+    font-size: 56px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.description{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: #333;
+    text-align: center;
+}
+.coffee{
+    position: relative;
+    width: 135px;
+    height: 135px;
+    margin: 20px 0 30px;
+}
+.cup{
+    position: absolute;
+    left: 10px;
+    top: 56px;
+}
+.smoke{
+    position: absolute;
+    left: 40px;
+}
+.bean{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+}
+.column:nth-of-type(2) > .column__center > .coffee{
+    margin: 40px 0 40px;
+}
