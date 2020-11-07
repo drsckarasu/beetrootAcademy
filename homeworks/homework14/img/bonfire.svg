@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19" width="16" height="19">
+	<defs>
+		<image width="16" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAYAAACZZ43PAAABh0lEQVQ4T4WUwXHCQAxFnzIDd7dAAbl46QBKgBKgBCgBSoASoITQAcsl97iE+ByYQRkpa4NtCHvy2NLX1/9/Lbw4eiKXnNOzMnkJEFGEA1fmMqRo13cA9MgIYYcw5kqG8JGaSpTQBukCRHbgIGNghTKqpypbGTK/Z9EA0MgE2KTpM4RZg7JwkNyB69MEMPpvlFzpNlvLKwZeE1kBi4fiCqHtSJvBAOHrQXMJvvtAAuv/NLDJxuD+7Okz5+ysFhJoDG0yODFD2dS22VSlRPzdANhLYPqcwScZZ18hAy/MW3pMJbB/CpBEnJj35vedoAXCWnK2nSRq9N1sb8v72iZYGmXIwVNptvYoODMzAVNWrMfYLUWN9g+ZRTQ9rxBG9Alc2JkGtrdGIuJgU3mn9Fq4KWq3DvUYm5Xut0a+gUICIX3/uxfCuMpD7YIePcIW3WXltdpNtPpknd5cslWXTQZG6cKkEirdympinUBn0qOwNRoAbXUT5Qg8vMZV/b8/FD16eHj0I6kAfgFd2aA4Q8BYWwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="bonfire icon" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
