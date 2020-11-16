@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<defs>
+		<image width="14" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANBAMAAABr8kJMAAAAAXNSR0IB2cksfwAAADBQTFRFzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMJzAyQgAAABB0Uk5TABF3iO7/u1XMRCJmqpkz3X5xN60AAABeSURBVHicY2AQMgkrYACCTq4gEMUdwHAERDNFMagwSDEwcMUwXGKYBBSoOHth0TUtIGNqgaTuRCA9xRskzpc8s3UBkMevwMChAJKdwMC0AUiLNDLICgBpviO5hkAKANFgEwiloSv4AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #cccccc;stroke-width: 2 } 
+	</style>
+	<g id="google plus">
+		<use id="boogle plus icon" href="#img1" x="9" y="9" />
+		<path id="Ellipse 1" class="shp0" d="M16 1C24.28 1 31 7.72 31 16C31 24.28 24.28 31 16 31C7.72 31 1 24.28 1 16C1 7.72 7.72 1 16 1Z" />
+	</g>
+</svg>
