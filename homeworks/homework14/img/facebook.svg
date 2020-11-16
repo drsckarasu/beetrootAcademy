@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="33" height="32">
+	<defs>
+		<image width="8" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANBAMAAABm7DILAAAAAXNSR0IB2cksfwAAABtQTFRFzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMKBRy7AAAAAl0Uk5TADO7/3fdRCIRm81h/AAAAClJREFUeJxjYGBUNmFgYDUGEsIm6QwMyWYMDG3OQFayMVAMSJhBxHARACRiCQInqDPvAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #cccccc;stroke-width: 2 } 
+	</style>
+	<g id="facebook">
+		<use id="facebook icon" href="#img1" x="13" y="9" />
+		<path id="Ellipse 1" class="shp0" d="M17 1C25.28 1 32 7.72 32 16C32 24.28 25.28 31 17 31C8.72 31 2 24.28 2 16C2 7.72 8.72 1 17 1Z" />
+	</g>
+</svg>
