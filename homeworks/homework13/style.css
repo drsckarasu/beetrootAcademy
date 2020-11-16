@@ -219,3 +219,22 @@ footer{
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+@media only screen and (max-width: 992px) {
+    .links__item {
+        width: 45%;
+        flex-grow: 1;
+        margin: 5px 0;
+    }
+    .links__item:nth-child(odd){
+        margin-right: 5px;
+    }
+    .links__item:nth-child(even){
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .links__item:nth-child(n){
+        margin: 5px 0;
+        width: 100%;
+    }
+}
