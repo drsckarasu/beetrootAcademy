@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="33" height="32">
+	<defs>
+		<image width="12" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMBAMAAACkW0HUAAAAAXNSR0IB2cksfwAAACdQTFRFzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMeM0DmQAAAA10Uk5TZrsAzP/dRBHuM6p3iKqwk7gAAAAzSURBVHicY2BkUgICBpMgMAXlgYi0IgYRIRFjl04Q5WriBaLatVxAlJA2DurgoYOHFAQBzmcNDms+MhkAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #cccccc;stroke-width: 2 } 
+	</style>
+	<g id="linked in">
+		<use id="linkedin icon" href="#img1" x="11" y="10" />
+		<path id="Ellipse 1" class="shp0" d="M17 1C25.28 1 32 7.72 32 16C32 24.28 25.28 31 17 31C8.72 31 2 24.28 2 16C2 7.72 8.72 1 17 1Z" />
+	</g>
+</svg>

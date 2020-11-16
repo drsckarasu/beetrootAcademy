@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<defs>
+		<image width="13" height="10" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKBAMAAACdwMn3AAAAAXNSR0IB2cksfwAAAC1QTFRFzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMCbJgnQAAAA90Uk5TIhEAM7v/RHfMiGbuVZndzPI1yQAAAFBJREFUeJxjYFRSMglJV2CoYFJyDY0UYFi6kyk0NECBwSIUCIIUGFJBtJMCg+ZWIF2kwKAFpKKFFBiUKkJDw5QUGNiqQ6MPAWnepxGFSkoKAAIiE9xapdstAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #cccccc;stroke-width: 2 } 
+	</style>
+	<g id="twitter">
+		<use id="twitter icon" href="#img1" x="10" y="11" />
+		<path id="Ellipse 1" class="shp0" d="M16 1C24.28 1 31 7.72 31 16C31 24.28 24.28 31 16 31C7.72 31 1 24.28 1 16C1 7.72 7.72 1 16 1Z" />
+	</g>
+</svg>
