@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'MuseoSansRounded';
+    src: url("fonts/MuseoSansRounded-100.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 85.75%;
+    max-width: 686px;
+    height: 65.17%;
+    max-height: 391px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 32.5px rgba(0,0,0,0.82));
+    background-color: #111a28;
+    padding: 20px 0 20px;
+}
+.logo{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.content__information{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+}
+.content__view{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 35px;
+}
+.shoe{
+    width: 100%;
+}
+.view__img{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+.view__bullets{
+    text-align: center;
+    vertical-align: middle;
+    height: 16px;
+}
+.bullet{
+    display: inline-block;
+    list-style-type: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 4px;
+    background-color: #1f273f;
+    margin: 0 4px;
+}
+.view__bullets ul li:hover{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #1f273f;
+    border: 2px solid #fff;
+    vertical-align: middle;
+}
+.bullet:nth-of-type(2){
+    background-color: #fff;
+}
+.bullet:nth-of-type(2):hover{
+    background-color: #fff;
+}
+.bullet:nth-of-type(3){
+    background-color: #ed3333;
+}
+.bullet:nth-of-type(3):hover{
+    background-color: #ed3333;
+}
+.bullet:last-of-type{
+    background-color: #29e3ea;
+}
+.bullet:last-of-type:hover{
+    background-color: #29e3ea;
+}
+.content__description{
+    margin-right: 55px;
+    padding-left: 80px;
+}
+.description__data{
+    margin: 10px 0;
+}
+.description__stars{
+    margin-bottom: 20px;
+}
+.star{
+    display: inline-block;
+    list-style-type: none;
+}
+h1{
+    font-size: 24px;
+    line-height: 26px;
+    color: #e7e7e7;
+    font-family: 'MuseoSansRounded', sans-serif;
+    letter-spacing: 0;
+}
+h2{
+    font-size: 14px;
+    line-height: 26px;
+    color: #e7e7e7;
+    font-family: 'MuseoSansRounded', sans-serif;
+    opacity: 0.5;
+    letter-spacing: 0;
+}
+.description__characteristic{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.description__characteristic p{
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 32px;
+    color: #e7e7e7;
+    font-family: 'MuseoSansRounded', sans-serif;
+    background-color: #111a28;
+    border: 1px solid #fff;
+    width: 69px;
+    height: 32px;
+    text-align: center;
+    margin-right: 2px;
+}
+button{
+    width: 184px;
+    height: 40px;
+    background-color: rgba(76, 82, 90, 0.26);
+    border: 1px solid #fff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    color: #e1e1e1;
+    font-family: 'MuseoSansRounded', sans-serif;;
+}
