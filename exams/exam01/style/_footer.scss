@@ -1,0 +1,39 @@
+.footer{
+    background-color: #232323;
+    &__content{
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0 30px;
+        &_header{
+            font-size: 1.5rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.625rem;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &_subheader{
+            font-size: 1rem;
+            letter-spacing: 0.08rem;
+            line-height: 1.625rem;
+            color: #fff;
+            margin: 10px 0 15px;
+        }
+        &_links{
+            width: 16%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .link_svg{
+                svg{
+                    width: 16px;
+                    height: 16px;
+                    fill: #e8e8e8;
+                    &:hover{
+                        fill: #5474fd;
+                    }
+                }
+            }
+        }
+    }
+}
