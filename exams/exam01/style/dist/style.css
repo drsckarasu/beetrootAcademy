@@ -364,8 +364,7 @@ a:link, a:visited {
 
 .vacation__content .vacation__book {
   width: 48.73%;
-  background-color: #252121;
-  opacity: 0.9;
+  background-color: rgba(37, 33, 33, 0.9);
   padding: 30px 20px;
 }
 
