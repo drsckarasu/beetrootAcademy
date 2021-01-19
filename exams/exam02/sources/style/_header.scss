@@ -1,0 +1,79 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    &__slider{
+        &__slide{
+            height: 100vh;
+            background-image: linear-gradient(45deg, #55b7ff 0%, #7d59ff 100%);
+        }
+        &__slide_main{
+            height: 100vh;
+            position: relative;
+            background-image: linear-gradient(45deg, #55b7ff 0%, #7d59ff 100%);
+            .slide_main_bg{
+                @include bg_img;
+                height: 100vh;
+                background-image: url("../../img/header_slide.png");
+                opacity: 0.06;
+            }
+            .slide_main_content{
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 5rem;
+                    letter-spacing: 0.25rem;
+                    color: #fff;
+                    font-family: 'GothamBold', sans-serif;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: 1.125rem;
+                    letter-spacing: 0.25rem;
+                    line-height: 1.375rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    &_scroll{
+        position: absolute;
+        bottom: 50px;
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+            cursor: pointer;   
+        }
+    }
+}
+.contact{
+    @include bg_img;
+    height: 100vh;
+    background-image: url("../../img/header_slide.png");
+}
+.footer{
+    @include bg_img;
+    height: 100vh;
+    background-image: url("../../img/header_slide.png");
+}
+.scrolled{
+    background-color: rgba(28, 28, 175, 0.4);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
