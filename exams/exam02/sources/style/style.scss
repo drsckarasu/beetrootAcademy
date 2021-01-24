@@ -1,7 +1,7 @@
 @mixin bg_img {
    // background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 @mixin hover {
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
@@ -11,9 +11,9 @@
 @import "general";
 @import "navigation";
 @import "header";
-/*@import "projects";
+@import "projects";
 @import "news";
-@import "galery";
-@import "contact";
 @import "footer";
+@import "galery";
+/*@import "contact";
 @import "media";*/
