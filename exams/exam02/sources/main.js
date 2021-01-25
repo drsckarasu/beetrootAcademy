@@ -12,7 +12,7 @@ $('.header_scroll').on('click', function() {
   $('html, body').animate({
     scrollTop: down
   }, 1000)  
-})
+});
 
 let lastId,
   topMenu = $("#top-menu"),
@@ -69,14 +69,14 @@ $(window).scroll(function () {
 });
 
 $(function() {
-  var settings = {fixedNavigation:true};
+  let settings = {fixedNavigation:true};
   $('#gallery a').lightBox(settings);
 });
 
 
 filterSelection("all")
 function filterSelection(c) {
-  var x, i;
+  let x, i;
   x = document.getElementsByClassName("image");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
@@ -86,7 +86,7 @@ function filterSelection(c) {
 }
 
 function w3AddClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -95,7 +95,7 @@ function w3AddClass(element, name) {
 }
 
 function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -106,13 +106,167 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
+let btnContainer = document.getElementById("myBtnContainer");
+let btns = btnContainer.getElementsByClassName("btn");
+for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("choosen");
+    let current = document.getElementsByClassName("choosen");
     current[0].className = current[0].className.replace(" choosen", "");
     this.className += " choosen";
+    $(".image").removeClass("first");
   });
 }
+
+function initMap() {
+  let ternopil = new google.maps.LatLng(49.542,25.616);
+
+  let mapCanvas = document.getElementById("map");
+  let mapOptions = {
+    center: ternopil, 
+    zoom: 12, 
+    disableDefaultUI: true,
+    styles: [
+      { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+      {
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [{ color: "#263c3f" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#6b9a76" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#38414e" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#212a37" }],
+      },
+      {
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#9ca5b3" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#746855" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#1f2835" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#f3d19c" }],
+      },
+      {
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [{ color: "#2f3948" }],
+      },
+      {
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#17263c" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#515c6d" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#17263c" }],
+      },
+    ],
+  };
+  let map = new google.maps.Map(mapCanvas,mapOptions);
+
+  let myCity = new google.maps.Circle({
+    center: ternopil,
+    radius: 100,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.2,
+    strokeWeight: 100,
+    fillColor: "#FF0000",
+    fillOpacity: 0.4,
+  });
+  myCity.setMap(map);
+
+  google.maps.event.addListener(myCity,'click',function() {
+    let pos = map.getZoom();
+    map.setZoom(15);
+    map.setCenter(myCity.getPosition());
+    window.setTimeout(function() {map.setZoom(pos);},3000);
+  });
+
+  let url;
+  $("#map").on('click', function () {
+  url = "https://www.google.com/maps?z=15&t=m&q=loc:49.542+25.616";
+  window.open(url, '_blank');
+  });
+}
+
+$(function() {
+  $('.error').hide();
+  $(".button").click(function() {
+
+    $('.error').hide();
+  	  var name = $("input#name").val();
+  		if (name == "") {
+        $("label#name_error").show();
+        $("input#name").focus();
+        return false;
+      }
+  		var email = $("input#email").val();
+  		if (email == "") {
+        $("label#email_error").show();
+        $("input#email").focus();
+        return false;
+      }
+      var dataString = 'name='+ name + '&email=' + email;
+      $.ajax({
+        type: "POST",
+        url: "bin/process.php",
+        data: dataString,
+        success: function() {
+          $('#contact_form').html("<div id='message'></div>");
+          $('#message').html("<h2>Contact Form Submitted!</h2>")
+          .append("<p>We will be in touch soon.</p>")
+          .hide()
+          .fadeIn(1500, function() {
+            $('#message').append("<img id='checkmark' src='images/check.png' />");
+          });
+        }
+      });
+      return false;
+  });
+});
+
+php/test-ajax.php

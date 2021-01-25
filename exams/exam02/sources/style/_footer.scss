@@ -48,6 +48,7 @@
                         align-items: center;
                         svg{
                             fill: #fff;
+                            width: 1vw;
                         }
                         &:hover {
                             @include hover;

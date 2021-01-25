@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     height: 5vw;
-    z-index: 1;
+    z-index: 2;
     margin: 2.5vw 0 0 0;
     padding: 10px 0;
     &__content{
@@ -67,6 +67,7 @@
                 align-items: center;
                 svg{
                     fill: #fff;
+                    width: 1vw;
                 }
                 &:hover {
                     @include hover;
