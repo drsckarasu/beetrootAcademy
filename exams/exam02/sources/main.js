@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.header__slider').slick({
     arrows: false,
     dots: true,
-    autoplay: true,          
+    autoplay: true,
   });
 });
 
@@ -11,7 +11,7 @@ $('.header_scroll').on('click', function() {
   let down = $(proj).offset().top
   $('html, body').animate({
     scrollTop: down
-  }, 1000)  
+  }, 1000)
 });
 
 let lastId,
@@ -100,7 +100,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -122,8 +122,8 @@ function initMap() {
 
   let mapCanvas = document.getElementById("map");
   let mapOptions = {
-    center: ternopil, 
-    zoom: 12, 
+    center: ternopil,
+    zoom: 12,
     disableDefaultUI: true,
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -250,7 +250,7 @@ $(function() {
         $("input#email").focus();
         return false;
       }
-      var dataString = 'name='+ name + '&email=' + email;
+      /*var dataString = 'name='+ name + '&email=' + email;
       $.ajax({
         type: "POST",
         url: "bin/process.php",
@@ -265,8 +265,16 @@ $(function() {
           });
         }
       });
-      return false;
+      return false;*/
   });
 });
 
-php/test-ajax.php
+document.addEventListener('DOMContentLoaded', navigation)
+
+function navigation(){
+    const burger = document.querySelector('.navigation__content_burger');
+    const navigation = document.querySelector('.navigation__content');
+    burger.addEventListener('click', ()=>{
+        navigation.classList.toggle('shown')
+    })
+}

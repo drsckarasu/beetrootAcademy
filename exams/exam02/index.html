@@ -6,8 +6,8 @@
     <link rel="apple-touch-icon" sizes="60x60" href="sources/favicom/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="sources/favicom/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="sources/favicom/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="sources/favicom/site.webmanifest">
+    <link rel="mask-icon" href="sources/favicom/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
@@ -16,10 +16,10 @@
     <meta property="og:description"        content="My second site based on html and css and js" />
     <meta property="og:image"              content="sources/img/thumb_image5.png" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="lightbox/jquery.lightbox.css" media="screen" />
     <link rel="stylesheet" href="sources/style/dist/style.css" />
-    
+
     <title>Basaraba Roman - Exam 02</title>
 </head>
 <body>
@@ -36,7 +36,9 @@
                     <li><a href="#contact" class="menu__link">contact</a></li>
                 </ul>
                 <div class="navigation__content_burger">
-
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
                 </div>
                 <div class="navigation__content_social">
                     <a class="link_svg" href="https://www.facebook.com/" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 19.253906 2 C 15.311906 2 13 4.0821719 13 8.8261719 L 13 13 L 8 13 L 8 18 L 13 18 L 13 30 L 18 30 L 18 18 L 22 18 L 23 13 L 18 13 L 18 9.671875 C 18 7.884875 18.582766 7 20.259766 7 L 23 7 L 23 2.2050781 C 22.526 2.1410781 21.144906 2 19.253906 2 z"/></svg></a>
@@ -48,8 +50,8 @@
             </div>
         </nav>
         <header class="header" id="about">
-                <div class="header__slider"> 
-                    <div class="header__slider__slide_main"> 
+                <div class="header__slider">
+                    <div class="header__slider__slide_main">
                         <div class="slide_main_bg"></div>
                         <div class="slide_main_content">
                             <h1>Simple & mordern</h1>
@@ -74,9 +76,9 @@
                             </style>
                             <path class="shp0" d="M5.12 5.65L1.75 2.28L2.59 1.43L8.5 7.34L14.41 1.36L15.25 2.21L8.5 9.03L7.66 8.18L5.12 5.65Z" />
                         </svg>
-                    </a>   
+                    </a>
                 </div>
-            
+
         </header>
         <section class="projects main" id="projects">
             <div class="projects__content main__content">
@@ -90,7 +92,7 @@
         </section>
         <section class="news main" id="news">
             <div class="news_bg">
-                    
+
             </div>
             <div class="news__content main__content">
                 <div class="line">
@@ -111,8 +113,8 @@
                 </h1>
                 <div id="myBtnContainer">
                     <button class="btn choosen" onclick="filterSelection('all')"> All</button>
-                    <button class="btn" onclick="filterSelection('white')"> White Buildings</button>
-                    <button class="btn" onclick="filterSelection('classic')"> Classic Buildings</button>
+                    <button class="btn" onclick="filterSelection('white')"> White</button>
+                    <button class="btn" onclick="filterSelection('classic')"> Classic</button>
                   </div>
                 <div id="gallery" class="gallery">
                     <ul class="grid-container">
@@ -143,7 +145,7 @@
                         </li>
                     </ul>
                 </div>
-                <button>see more</button> 
+                <button>see more</button>
             </div>
         </section>
         <section class="contact main" id="contact">
@@ -223,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <footer class="footer main">
             <div class="footer_bg" ></div>
@@ -244,7 +246,7 @@
                             Copyrights &#169; 2017 Monticello Group
                         </p>
                         <p>
-                            Made with 
+                            Made with
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <g>
                                     <g>
@@ -255,7 +257,7 @@
                                             C512,93.417,453.532,30,376,30z"/>
                                     </g>
                                 </g>
-                            </svg> 
+                            </svg>
                             by Ga Huy
                         </p>
                     </div>
@@ -271,7 +273,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="lightbox/jquery.lightbox.js"></script>
-    <script type="text/javascript" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nxlCsK9IT5WbPtpmVWm3-k4fq2WeB_E&callback=initMap"></script>  
+    <script type="text/javascript" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nxlCsK9IT5WbPtpmVWm3-k4fq2WeB_E&callback=initMap"></script>
     <script type="text/javascript" src="sources/main.js">
 
     </script>

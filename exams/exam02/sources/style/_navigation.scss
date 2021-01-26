@@ -4,7 +4,7 @@
     height: 5vw;
     z-index: 2;
     margin: 2.5vw 0 0 0;
-    padding: 10px 0;
+    padding: 0.625vw 0;
     &__content{
         display: flex;
         flex-direction: row;
@@ -17,7 +17,7 @@
             }
         }
         &_menu{
-            width: 48%;    
+            width: 48%;
             display: flex;
             justify-content: space-between;
             li{
@@ -30,13 +30,13 @@
                     &::before{
                         content: "";
                         display: inline-block;
-                        width: 9px;
-                        height: 9px;
+                        width: 0.6vw;
+                        height:  0.6vw;
                         border-radius: 50%;
                         border: 1px solid #fff;
-                        margin-right: 14px;
+                        margin-right: 0.9vw;
                     }
-                    
+
                 }
                 &:hover {
                     @include hover;
@@ -71,6 +71,7 @@
                 }
                 &:hover {
                     @include hover;
+                    border: 1px solid  rgba(255, 255, 255, 1);
                 }
             }
         }
