@@ -1,0 +1,84 @@
+.navigation{
+    position: fixed;
+    top: 0;
+    height: 5vw;
+    z-index: 2;
+    margin: 2.5vw 0 0 0;
+    padding: 0.625vw 0;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        &_logo{
+            img{
+                width: 100%;
+            }
+        }
+        &_menu{
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                text-transform: uppercase;
+                a{
+                    font-size: 0.875rem;
+                    line-height: 1.375rem;
+                    color: #fff;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 0.6vw;
+                        height:  0.6vw;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        margin-right: 0.9vw;
+                    }
+
+                }
+                &:hover {
+                    @include hover;
+                }
+            }
+            li.active{
+                a{
+                    &::before{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        &_burger{
+            display: none;
+        }
+        &_social{
+            width: 14%;
+            display: flex;
+            justify-content: space-between;
+            .link_svg{
+                width: 2.5vw;
+                height: 2.5vw;
+                border: 1px solid  rgba(255, 255, 255, 0.4);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    fill: #fff;
+                    width: 1vw;
+                }
+                &:hover {
+                    @include hover;
+                    border: 1px solid  rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+.scrolled{
+    background-color: rgba(28, 28, 175, 0.3);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
