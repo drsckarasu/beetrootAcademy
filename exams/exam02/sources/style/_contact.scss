@@ -62,7 +62,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        input[type="text"]{
+                        input{
                             height: 2.25rem;
                             font-size: 1.125rem;
                             line-height: 2.25rem;
@@ -70,6 +70,14 @@
                             color: #2c4058;
                             border: 0;
                             border-bottom: 1px solid rgba(44, 64, 88, 0.2);
+                            &.error {
+                                border-bottom: 1px dashed #ff0000;
+                                color: #ff0000;
+                            }
+                            &.valid.success-alert {
+                                border-bottom: 1px solid #4CAF50;
+                                color: #008000;
+                            }
                             &:focus, &:active{
                                 outline: none;
                                 border-bottom: 1px solid rgb(44, 64, 88);
@@ -79,9 +87,12 @@
                             }
                         }
                         label{
-                            color: #ff0000;
-                            align-self: flex-end;
-                            font-size: .8rem;
+                            &.error {
+                                color: #ff0000;
+                                display: block;
+                                margin-top: 0.2rem;
+                                font-size: 0.8rem;
+                            }
                         }
                         button{
                             font-size: 0.875rem;

@@ -667,7 +667,7 @@ a:link, a:visited {
           justify-content: space-between;
 }
 
-.contact__modal__content .content__info_inputs form input[type="text"] {
+.contact__modal__content .content__info_inputs form input {
   height: 2.25rem;
   font-size: 1.125rem;
   line-height: 2.25rem;
@@ -677,20 +677,30 @@ a:link, a:visited {
   border-bottom: 1px solid rgba(44, 64, 88, 0.2);
 }
 
-.contact__modal__content .content__info_inputs form input[type="text"]:focus, .contact__modal__content .content__info_inputs form input[type="text"]:active {
+.contact__modal__content .content__info_inputs form input.error {
+  border-bottom: 1px dashed #ff0000;
+  color: #ff0000;
+}
+
+.contact__modal__content .content__info_inputs form input.valid.success-alert {
+  border-bottom: 1px solid #4CAF50;
+  color: #008000;
+}
+
+.contact__modal__content .content__info_inputs form input:focus, .contact__modal__content .content__info_inputs form input:active {
   outline: none;
   border-bottom: 1px solid #2c4058;
 }
 
-.contact__modal__content .content__info_inputs form input[type="text"]::-webkit-input-placeholder {
+.contact__modal__content .content__info_inputs form input::-webkit-input-placeholder {
   color: rgba(75, 85, 98, 0.5);
 }
 
-.contact__modal__content .content__info_inputs form label {
+.contact__modal__content .content__info_inputs form label.error {
   color: #ff0000;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  font-size: .8rem;
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
 }
 
 .contact__modal__content .content__info_inputs form button {
@@ -971,7 +981,7 @@ a:link, a:visited {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .navigation__content {
     width: 100%;
   }

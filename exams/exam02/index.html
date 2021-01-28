@@ -6,7 +6,6 @@
     <link rel="apple-touch-icon" sizes="60x60" href="sources/favicom/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="sources/favicom/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="sources/favicom/favicon-16x16.png">
-    <link rel="manifest" href="sources/favicom/site.webmanifest">
     <link rel="mask-icon" href="sources/favicom/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -106,7 +105,6 @@
         <section class="galery main"  id="galery">
             <div class="galery__content main__content">
                 <div class="line">
-
                 </div>
                 <h1>
                     gallery
@@ -213,19 +211,15 @@
                                 </svg>From 07:05AM to 19:30PM
                             </a>
                         </div>
-                        <div class="content__info_inputs">
-                            <form name="contact" action="">
-                                <input type="text" name="name" id="name" size="30" value="" placeholder="Name">
-                                <label class="error" for="name" id="name_error">This field is required</label>
-                                <input type="text" name="email" id="email" size="30" value="" placeholder="Email">
-                                <label class="error" for="email" id="email_error">This field is required</label>
-                                <button class="button" type="submit" name="submit" id="submit_btn">submit</button>
-                            </form>
+                        <div class="content__info_inputs" id="contact_form">
+                            <form id="basic-form" action="" method="post">
+                                <input id="name" name="name" minlength="5" type="text" required>
+                                <input id="email" type="email" name="email" required>
+                                <button class="submit" type="submit">submit</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <footer class="footer main">
             <div class="footer_bg" ></div>
@@ -270,7 +264,9 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="lightbox/jquery.lightbox.js"></script>
     <script type="text/javascript" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nxlCsK9IT5WbPtpmVWm3-k4fq2WeB_E&callback=initMap"></script>
