@@ -1,0 +1,68 @@
+.popular{
+    padding: 2.5vw 0 4.5vw;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-weight: 700;
+            font-size: 1.875rem;
+            color: #171717;
+            margin-bottom: 1.4vw;
+        }
+        &_articles{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .popular_article{
+                width: 23%;
+                .popular_img{
+                    position: relative;
+                    @include bg_img;
+                    border-radius: 5px;
+                    height: 14vw;
+                    .popular_label{
+                        position: absolute;
+                        top: 1vw;
+                        left: 1vw;
+                        padding: 0.21vw 0.65vw;
+                        border-radius: 3px;
+                        background-color: #4A90E2;
+                        color: white;
+                        font-size: 0.75rem;
+                    }
+                }
+                &:first-of-type {
+                    .popular_img{
+                        background-image: url("../../img/img15.png");
+                    }
+                }
+                &:nth-of-type(2){
+                    .popular_img{
+                        background-image: url("../../img/img16.png");
+                    }
+                }
+                &:nth-of-type(3){
+                    .popular_img{
+                    background-image: url("../../img/img17.png");
+                    }
+                }
+                &:nth-of-type(4){
+                    .popular_img{
+                    background-image: url("../../img/img18.png");
+                    }
+                }
+                h2{
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    margin: 1.05vw 0 0.52vw;
+                    color: #171717;
+                }
+                h3{
+                    font-size: 0.875rem;
+                    font-style: italic;
+                    color: #666;
+                }
+            }
+        }
+    }
+}

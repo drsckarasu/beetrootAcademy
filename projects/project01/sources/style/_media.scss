@@ -1,0 +1,459 @@
+@media screen and (max-width: 1024px){
+    html{
+        font-size: 14px;
+    }
+    .navigation{
+        &__content{
+            &_menu{
+                width: 36%;
+                font-size: 0.8rem;
+                margin-right: -8vw;
+            }
+        }
+    }
+    .recipes{
+        &__content{
+            .top_article{
+                &:first-of-type {
+                    .article_text{
+                        .text{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                &__content{
+                    .article_text{
+                        .quote{
+                            font-size: 0.8rem;
+                        }
+                        .text{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .article{
+        &__content{
+            &_aside{
+                .autor{
+                    h3{
+                        font-size: 0.8rem;
+                    }
+                    p{
+                        font-size: 0.85rem;
+                    }
+                    button{
+                        font-size: 0.8rem;
+                    }
+                }
+                .posts{
+                    .post{
+                        h2{
+                            font-size: 1.1rem;
+                        }
+                        h3{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .instagram{
+                    &_button{
+                        div{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .tags{
+                    &_collection{
+                        .tag{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .form{
+                    p{
+                        font-size: 0.8rem;
+                    }
+                    form{
+                        input{
+                            font-size: 0.8rem;
+                        }
+                        label{
+                            &.error {
+                                font-size: 0.7rem;
+                            }
+                        }
+                        button{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+            &_info{
+                .article__content_pagination{
+                    .pagination_menu{
+                        font-size: 0.8rem;
+                        li{
+                            a{
+                                svg{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popular{
+        &__content{
+            &_articles{
+                .popular_article{
+                    h2{
+                        font-size: 1.1rem;
+                    }
+                    h3{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        &__content{
+           .description{
+                p{
+                    font-size: 0.8rem;
+                }
+                &_links{
+                    .description_menu{
+                        li{
+                            .description__link{
+                                svg{
+                                    width: 1.2vw;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            .recent_posts{
+                h2{
+                    font-size: 1.1rem;
+                }
+                .recent_post{
+                    &_info{
+                        h2{
+                            font-size: 0.8rem;
+                        }
+                        h3{
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+            .newsletter_form{
+                h2{
+                    font-size: 1.1rem;
+                }
+                form{
+                    input{
+                        font-size: 0.8rem;
+                        border: none;
+                    }
+                    label{
+                        &.error {
+                            font-size: 0.6rem;
+                        }
+                    }
+                    button{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &__content{
+            &_menu{
+                width: 36%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .main{
+        &__content {
+            width: 90%;
+        }
+    }
+    .navigation{
+        &__content{
+            position: relative;
+            &_logo{
+                display: none;
+            }
+            &_burger{
+                display: block;
+                cursor: pointer;
+                .line{
+                    height: 2px;
+                    width: 2rem;
+                    margin: .3rem 0;
+                    background: #fff;
+                    transition: transform .5s ease, opacity .5s ease;
+                }
+            }
+            &_menu{
+                position: absolute;
+                margin-right: 0;
+                top: 5vw;
+                left: -50vw;
+                height: 40vw;
+                width: 30%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: transform 1s ease;
+                background: linear-gradient( 180deg,rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.8) 40%,rgba(0, 0, 0, 0.4) 60%,rgba(0, 0, 0, 0.2) 100%);
+                li{
+                    margin: 2vw 0;
+                }
+            }
+        }
+        .shown{
+           overflow: visible;
+            .navigation__content_burger{
+                .line1{
+                    transform: translate(-9px) rotate(45deg) translate(8.5px);
+                }
+                .line2{
+                    opacity: 0;
+                }
+                .line3{
+                    transform: translate(-9px) rotate(-45deg) translate(8.5px);
+                }
+            }
+            .navigation__content_menu{
+                left: -5vw;
+                z-index: 10;
+            }
+        }
+    }
+    .recipes{
+        height: 50vh;
+        margin-bottom: 4vw;
+        .recipes__content{
+            display: none;
+        }
+        .recipes__slider{
+            height: 50vh;
+            display: block;
+            &__slide_main{
+                height: 50vh;
+                position: relative;
+                .recipes__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .recipes__info{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 5vw;
+                    .recipes_label{
+                        display: inline-block;
+                        padding: 0.21vw 0.65vw;
+                        border-radius: 3px;
+                        background-color: #4A90E2;
+                        color: #fff;
+                        font-size: 0.75rem;
+                        margin-bottom: 30vh;
+                    }
+                    .recipes_text{
+                        color: #fff;
+                        .quote{
+                            font-size: 0.875rem;
+                            margin-bottom: 1vw;
+                        }
+                        .text{
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            &__slide{
+                height: 50vh;
+                position: relative;
+                .recipes__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .recipes__info{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 5vw;
+                    .recipes_label{
+                        display: inline-block;
+                        padding: 0.21vw 0.65vw;
+                        border-radius: 3px;
+                        background-color: #4A90E2;
+                        color: #fff;
+                        font-size: 0.75rem;
+                        margin-bottom: 30vh;
+                    }
+                    .recipes_text{
+                        color: #fff;
+                        .quote{
+                            font-size: 0.875rem;
+                            margin-bottom: 1vw;
+                        }
+                        .text{
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .article{
+        &__content{
+            &_aside{
+                display: none;
+            }
+            &_info{
+                width: 100%;
+                .article__content_pagination{
+                    .pagination_menu{
+                        font-size: 0.6rem;
+                        li{
+                            a{
+                                svg{
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popular{
+        display: none;
+    }
+    .contact{
+        &__content{
+           &_column{
+               width: 35%;
+            }
+            .recent_posts{
+                display: none;
+            }
+            .newsletter_form{
+                form{
+                    button{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &__content{
+            &_menu{
+                display: none;
+            }
+            &_scroll{
+                display: block;
+                width: 3vw;
+                height: 3vw;
+                border-radius: 3px;
+                background-color: #373737;
+                .footer_scroll{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    svg{
+                        width: 1.6vw;
+                        fill: #fff;
+                    }
+                    &:hover{
+                       @include hover;
+                       svg{
+                        stroke: #4A90E2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .main{
+        &__content {
+            width: 100%;
+        }
+    }
+
+    .recipes{
+        .recipes__slider{
+            &__slide_main{
+                .recipes__info{
+                    .recipes_label{
+                        margin-bottom: 25vh;
+                    }
+                }
+            }
+            &__slide{
+                .recipes__info{
+                    .recipes_label{
+                        margin-bottom: 25vh;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        padding: 3.5vw 3vw 2vw;
+        &__content{
+           display: flex;
+           flex-direction: column;
+           &_column{
+               width: 100%;
+            }
+           .description{
+               margin-bottom: 4vw;
+            }
+            .newsletter_form{
+                form{
+                    input{
+                        height: 3vw;
+                        font-size: 0.6rem;
+                    }
+                    label{
+                        &.error {
+                            font-size: 0.5rem;
+                        }
+                    }
+                    button{
+                        height: 4vw;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

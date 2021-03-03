@@ -1,0 +1,20 @@
+@mixin bg_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin hover {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@import "general";
+@import "navigation";
+@import "recipes";
+@import "article";
+@import "popular";
+@import "contact";
+@import "footer";
+@import "media";
