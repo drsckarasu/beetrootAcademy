@@ -1,0 +1,30 @@
+.footer{
+    background-color: #000;
+    padding: 2vw 0;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 0.875rem;
+            color: #fff;
+        }
+        &_menu{
+          width: 33.33%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            li{
+                list-style: none;
+                a{
+                    color: #fff;
+                }
+                &:hover {
+                    @include hover;
+                }
+            }
+        }
+        &_scroll{
+            display: none;
+        }
+    }
+}

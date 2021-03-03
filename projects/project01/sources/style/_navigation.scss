@@ -1,0 +1,139 @@
+.navigation{
+    background-color: #000;
+    padding: 2vw 0;
+    &__content{
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        &_logo{
+            display: flex;
+            color: #fff;
+            font-size: 0.875rem;
+            div:first-of-type{
+                font-family: 'Lato', sans-serif;
+                margin-right: 5px;
+                padding: 5px 0;
+            }
+            div:last-of-type{
+                font-family: 'Lato', sans-serif;
+                padding: 5px;
+                background-color: #4A90E2;
+                border-radius: 3px;
+                letter-spacing: 1px;
+            }
+        }
+        &_menu{
+            width: 33.33%;
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+            font-size: 0.875rem;
+            margin-right: -12.5vw;
+            li{
+                list-style: none;
+                a{
+                    color: #fff;
+                }
+                &:hover {
+                    @include hover;
+                }
+            }
+        }
+        &_burger{
+            display: none;
+        }
+        &_search{
+            width: 25%;
+            #content {
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                top: 50%;
+                right: -15px;
+                transform: translateY(-50%);
+                input {
+                    box-sizing: border-box;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #929EAF;
+                    border-radius: 50%;
+                    background: none;
+                    color: #fff;
+                    outline: 0;
+                    transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+                    padding 0.2s;
+                    transition-delay: 0.4s;
+                    transform: translateX(-100%);
+                }
+                .search {
+                    background: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    padding: 0;
+                    border-radius: 100%;
+                    outline: 0;
+                    border: 0;
+                    color: inherit;
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+                    transform: translateX(-100%);
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 7px;
+                        height: 1.5px;
+                        background-color: #929EAF;
+                        transform: rotate(45deg);
+                        margin-top: 11px;
+                        margin-left: 6px;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+                .close {
+                    transition: 0.4s ease-in-out;
+                    transition-delay: 0.4s;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 12px;
+                        height: 2px;
+                        margin-top: 0;
+                        margin-left: -6px;
+                        background-color: #929EAF;
+                        transform: rotate(45deg);
+                        transition: 0.2s ease-in-out;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 12px;
+                        height: 2px;
+                        background-color: #929EAF;
+                        margin-top: 0;
+                        margin-left: -6px;
+                        cursor: pointer;
+                        transform: rotate(-45deg);
+                    }
+                }
+                .square {
+                    box-sizing: border-box;
+                    padding: 0 16px 0 10px;
+                    width: 18vw;
+                    height: 20px;
+                    border: 1px solid #929EAF;
+                    border-radius: 0;
+                    background: none;
+                    color: #fff;
+                    outline: 0;
+                    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+                    padding 0.2s;
+                    transition-delay: 0.4s, 0s, 0.4s;
+                   transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}
