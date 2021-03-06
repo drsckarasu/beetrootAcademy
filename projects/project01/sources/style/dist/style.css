@@ -109,6 +109,7 @@ a:link, a:visited {
 
 .navigation__content_search {
   width: 25%;
+  position: relative;
 }
 
 .navigation__content_search #content {
